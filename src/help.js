@@ -1,14 +1,7 @@
 const help = (prefix) => {
 	return `
 
-⌜ *ѕнαηвσт ву ѕнαη∂υу* ⌟  
-
-◉ *INFORMACION*
-   ○ Comando: ⌜ ${prefix} ⌟
-   ○ Creador: ѕнαη∂υу™ 
-   ○ Como instalar el bot: https://www.youtube.com/watch?v=2LQSzEbpJ-M
-   ○ Instagram: https://www.instagram.com/thepavos
-
+BUBABOT
 
 ◉ *NUEVOS COMANDOS*
 ○ ${prefix}levelmenu
@@ -33,10 +26,6 @@ Comandos de bienvedia a grupos
 ◉ *PARA USAR EL BOT*
 Registrate con el comando ${prefix}daftar y tu nombre
 
-◉ *RESUELVE TUS DUDAS*
-  ║
-  ╠ ○ ${prefix}creador
-  ╚ Dudas o problemas aqui
 
 ◉ *CREAR STICKERS*
   ║
@@ -94,7 +83,7 @@ Para activar los NSFW coloque el siguiente comando ${prefix}nsfw 1 y para desact
 No te olvides de seguirme en instagram flaco ;)
 
 
-ву ѕнαη∂υу
+ву BUBABOT
 
 
 ⌜ *ごきげんよう :)* ⌟ 
