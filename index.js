@@ -333,15 +333,15 @@ async function starts() {
                                         xn: 'Calmao pa 😎\n\n*Estoy descargando tu video 🔄*\n\nAguarde un momento, por favor\n\nву ѕнαη∂υу',
 					mpv: 'Calma ✋🥸🤚\n\n*Estoy descargando tu video 🔄*\n\nAguarde un momento, por favor\n\nву ѕнαη∂υу',
 					insta: 'Calmao 😎\n\n*Estoy descargando tu post 🔄*\n\nAguarde un momento, por favor\n\nву ѕнαη∂υу',
-					musica: 'Calma soldado estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube❗*\n\n*Si el comando *play no funciona utiliza el comando *play2*\n\nву BUBABOT',
-					musica2: 'Calma soldado estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube❗*\n\n*Si el comando *play2 no funciona utiliza el comando *play*\n\nву BUBABOT',
+					musica: 'Calma soldado estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube❗*\n\n*Si el comando *play no funciona utiliza el comando *play2*\n\nву ѕнαη∂υу',
+					musica2: 'Calma soldado estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube❗*\n\n*Si el comando *play2 no funciona utiliza el comando *play*\n\nву ѕнαη∂υу',
 					daftarB: `「NO ESTAS REGISTRADO」\n\nPA NO APARECES EN MI BASE DE DATOS ✋🥸🤚\n\nPara poder usarme escribe el siguente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar shanduy`,
 				}
 			}
     			const apakah = ['Si','No']
                         const kapankah = ['Otro día','Otra semana','Otro mes','Otro año']
 			const botNumber = client.user.jid
-			const ownerNumber = ["593997889284@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["593991702833@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 	                const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -505,7 +505,7 @@ async function starts() {
  
        /******ENTRADA FIN DE FUNCIONES******/
 			function addMetadata(packname, author) {	
-				if (!packname) packname = 'ShanBot'; if (!author) author = 'Shanduy';	
+				if (!packname) packname = 'BUBA'; if (!author) author = 'BOT';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
@@ -1501,6 +1501,10 @@ break
                   reply(`Buenos Dias trolos de mierda`)
                   }
 
+                if (budy.includes(`Buenos días`)) {
+                  reply(`Buenos Dias trolos de mierda`)
+                  }
+
 		if (budy.includes(`Bot gay`)) {
                   reply(`Miren a este boludito`)
                   }
@@ -1532,7 +1536,7 @@ break
         const none = fs.readFileSync('./mp3/viernes.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
-	if (budy.startsWith(`:v`)) {
+	if (budy.startsWith(`:V`)) {
         const none = fs.readFileSync('./mp3/viejo1.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
@@ -1548,7 +1552,7 @@ break
         const none = fs.readFileSync('./anishan/anime3.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
-	if (budy.startsWith(`Te amo botsito uwu`)) {
+	if (budy.startsWith(`Te amo bot`)) {
         const none = fs.readFileSync('./anishan/anime2.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
@@ -1684,7 +1688,7 @@ break
         const none = fs.readFileSync('./mp3/gaspi1.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
-		if (budy.startsWith(`chica lgante`)) {
+		if (budy.startsWith(`chica elegante`)) {
         const none = fs.readFileSync('./mp3/chica lgante.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
