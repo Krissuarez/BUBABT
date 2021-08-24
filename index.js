@@ -267,7 +267,7 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `Soldado @${num.split('@')[0]}\nDe partir de ahora sos un verdadero Soldado !!!! Bienvenido a *${mdata.subject}* Más que un grupo una familia\n\NO OLVIDES REPORTARTE CADA SEMANA\n\nOjito sigue las reglas del grupo si no, pa fuera mi loco los admins te eliminan 🧐\n\nPara utilizar el bot registrate con el comando ${prefix}daftar y tu nombre\n\nPara ver los demas comandos utiliza ${prefix}help\n\nOjito con el spam 🧐\n\nby BUBABOT`
+				teks = `Hola @${num.split('@')[0]}\nDe partir de ahora sos un verdadero Soldado !!!! Bienvenido a *${mdata.subject}* Más que un grupo, una familia\n\NO OLVIDES REPORTARTE CADA SEMANA\n\nOjito sigue las reglas del grupo si no, pa fuera mi loco los admins te eliminan 🧐\n\nPara utilizar el bot registrate con el comando ${prefix}daftar y tu nombre\n\nPara ver los demas comandos utiliza ${prefix}help\n\nOjito con el spam 🧐\n\nby BUBABOT`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
@@ -631,7 +631,7 @@ async function starts() {
 					}
 					break
 
-/******JUEGOS BOT LA PUTA MADRE NO TE OLVIDES******/
+/******JUEGOS BOT******/
 					
 case 'gay':
 if (!isUser) return reply(mess.only.daftarB)
@@ -1491,34 +1491,34 @@ break
 					break
                 default:
                 if (budy.includes(`Hola`)) {
-                  reply(`wtf y este random?`)
+                  reply(`Que tal, como te va?`)
                   }
 		if (budy.includes(`Todo bien`)) {
                   reply(`Si amigo todo bien, vite`)
                   }
 
 		if (budy.includes(`Buenos dias`)) {
-                  reply(`Buenos Dias trolos de mierda`)
+                  reply(`Buenos Dias caballero`)
                   }
 
                 if (budy.includes(`Buenos días`)) {
-                  reply(`Buenos Dias trolos de mierda`)
+                  reply(`Buenos Dias cabellero`)
                   }
 
 		if (budy.includes(`Bot gay`)) {
-                  reply(`Miren a este boludito`)
+                  reply(`Miren a este pendejito`)
                   }
 
 		if (budy.includes(`Gracias`)) {
                   reply(`De nada padre`)
                   }
 
-		if (budy.includes(`Bien gracias y tu?`)) {
-                  reply(`wtf y esta random?`)
+		if (budy.includes(`gracias y tu?`)) {
+                  reply(`aquí empezando con el ganso en la mano`)
                   }
 					
-		if (budy.includes(`opa`)) {
-                  reply(`opaaaaa`)
+		if (budy.includes(`que rollo`)) {
+                  reply(`Calma mijin, calma`)
                   }
                  
 		if (budy.includes(`Fua`)) {
