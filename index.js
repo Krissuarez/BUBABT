@@ -1521,6 +1521,14 @@ break
                   reply(`jajaja`)
                   }
 
+                if (budy.includes(`buenas noches`)) {
+                  reply(`Buenas noches caballero`)
+                  }
+
+                if (budy.includes(`buenas tardes`)) {
+                  reply(`Buenas tardes caballero`)
+                  }
+
                 if (budy.includes(`Buenos días`)) {
                   reply(`Buenos Dias cabellero`)
                   }
