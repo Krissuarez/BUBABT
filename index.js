@@ -1500,6 +1500,26 @@ break
 		if (budy.includes(`Buenos dias`)) {
                   reply(`Buenos Dias caballero`)
                   }
+                
+                if (budy.includes(`clan buba`)) {
+                  reply(`Denle una cerveza a esta sabandija`)
+                  }
+
+                if (budy.includes(`buba clan`)) {
+                  reply(`Denle una cerveza a esta sabandija`)
+                  }
+
+                if (budy.includes(`escanor`)) {
+                  reply(`Esta ocupado mi puto amo pero ya te atenderá`)
+                  }
+
+                if (budy.includes(`jajaja`)) {
+                  reply(`jejeje`)
+                  }
+
+                if (budy.includes(`jejeje`)) {
+                  reply(`jajaja`)
+                  }
 
                 if (budy.includes(`Buenos días`)) {
                   reply(`Buenos Dias cabellero`)
