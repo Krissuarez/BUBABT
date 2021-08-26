@@ -1501,11 +1501,11 @@ break
                   reply(`Buenos Dias caballero`)
                   }
                 
-                if (budy.includes(`clan buba`)) {
+                if (budy.includes(`Clan buba`)) {
                   reply(`Denle una cerveza a esta sabandija`)
                   }
 
-                if (budy.includes(`buba clan`)) {
+                if (budy.includes(`Buba clan`)) {
                   reply(`Denle una cerveza a esta sabandija`)
                   }
 
