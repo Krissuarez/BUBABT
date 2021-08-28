@@ -1155,11 +1155,11 @@ break
 				
 				
 	        case 'play':   
-	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: *play2 Industry Baby Lil Nas X')
+	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: *play Industry Baby - Lil Nas X')
 		if (!isUser) return reply(mess.only.daftarB)
                 reply(mess.only.musica)
                 play = body.slice(5)
-                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=hamilton40`)
+                anu = await fetchJson(`https://api.zeks.me/api/ytplaymp3?q=${play}&apikey=hamilton48`)
                 if (anu.error) return reply(anu.error)
                 infomp3 = `*⌈ Canción Encontrada ✅ ⌉*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP3 ⚠*`
                 buffer = await getBuffer(anu.result.thumbnail)
@@ -1169,11 +1169,11 @@ break
                 break
 		
 		case 'play2':   
-	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: *play2 Industry Baby Lil Nas X')
+	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: *play2 Industry Baby - Lil Nas X')
 		if (!isUser) return reply(mess.only.daftarB)
-                reply(mess.only.musica2)
+	        reply(mess.only.musica2)
                 play = body.slice(5)
-                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=shanduy40`)
+                anu = await fetchJson(`https://api.zeks.me/api/ytplaymp3?q=${play}&apikey=shanduy48`)
                 if (anu.error) return reply(anu.error)
                 infomp3 = `*⌈ Canción Encontrada ✅ ⌉*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP3 ⚠*`
                 buffer = await getBuffer(anu.result.thumbnail)
@@ -1183,17 +1183,18 @@ break
                 break
                                 
 		case 'ytmp4':
-		if (args.length < 1) return reply('Donde esta la URL?')
-		if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
+		if (args.length < 1) return reply('Donde esta la url del video?\n\nEjemplo: *ytmp4 www.youtube.com/xxxxxxxxx')
+		if (!isUser) return reply(mess.only.daftarB)
 		reply(mess.only.mpv)
-		anu = await fetchJson(`https://st4rz.herokuapp.com/api/ytv2?url=${args[0]}`, {method: 'get'})
-		if (anu.error) return reply(anu.error)
-		teks = `*⌈ Video Encontrado ✅ ⌉*\n◉ *Título:* ${anu.title}\n\n*ESPERE ENVIANDO SU ARCHIVO MP4 ⚠*`
-		thumb = await getBuffer(anu.thumb)
-		client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
-		buffer = await getBuffer(anu.result)
-		client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek})
-		break		
+		if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
+		anu = await fetchJson(`https://api.zeks.me/api/ytmp4?apikey=${apikey}&url=${args[0]}`, {method: 'get'})
+		if (anu.error) return reply(anu.error.yt)
+		teks = `*⌈ Video Encontrada ✅ ⌉*\n◉ *Título:* ${anu.result.title} \n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP4 ⚠*`
+		lagu = await getBuffer(anu.result.thumbnail)
+                client.sendMessage(from, lagu, image, {quoted: mek, caption: teks})
+		buffer = await getBuffer(anu.result.url_video)
+		client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek})
+		break	
 				
 				
 				
@@ -1504,11 +1505,19 @@ break
                   reply(`Denle una cerveza a esta sabandija`)
                   }
 
+                if (budy.includes(`z`)) {
+                  reply(`Que quieres boludo`)
+                  }
+
                 if (budy.includes(`Buba clan`)) {
                   reply(`Denle una cerveza a esta sabandija`)
                   }
 
                 if (budy.includes(`escanor`)) {
+                  reply(`Esta ocupado mi puto amo pero ya te atenderá`)
+                  }
+
+                if (budy.includes(`Escanor`)) {
                   reply(`Esta ocupado mi puto amo pero ya te atenderá`)
                   }
 
@@ -1523,13 +1532,17 @@ break
                 if (budy.includes(`buenas noches`)) {
                   reply(`Buenas noches caballero`)
                   }
+      
+                if (budy.includes(`benja lamela amid`)) {
+                  reply(`enseguida señor`)
+                  }
 
                 if (budy.includes(`buenas tardes`)) {
                   reply(`Buenas tardes caballero`)
                   }
 
                 if (budy.includes(`Buenos días`)) {
-                  reply(`Buenos Dias cabellero`)
+                  reply(`Buenos Dias caballero`)
                   }
 
 		if (budy.includes(`Bot gay`)) {
@@ -1542,6 +1555,10 @@ break
 
 		if (budy.includes(`gracias y tu?`)) {
                   reply(`aquí empezando con el ganso en la mano`)
+                  }
+
+                 if (budy.includes(`ganso`)) {
+                  reply(`puerco degenerado te caera la ley prro`)
                   }
 					
 		if (budy.includes(`que rollo`)) {
