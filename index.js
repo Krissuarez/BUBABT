@@ -1505,9 +1505,10 @@ break
                   reply(`Denle una cerveza a esta sabandija`)
                   }
 
-                if (budy.includes(`z`)) {
-                  reply(`Que quieres boludo`)
+               if (budy.includes(`clan buba`)) {
+                  reply(`Denle una cerveza a esta sabandija`)
                   }
+
 
                 if (budy.includes(`Buba clan`)) {
                   reply(`Denle una cerveza a esta sabandija`)
@@ -1561,7 +1562,7 @@ break
                   reply(`puerco degenerado te caera la ley prro`)
                   }
 					
-		if (budy.includes(`que rollo`)) {
+		if (budy.includes(`rollo`)) {
                   reply(`Calma mijin, calma`)
                   }
                  
