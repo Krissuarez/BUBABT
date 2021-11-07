@@ -242,7 +242,7 @@ function kyun(seconds){
 
 async function starts() {
 	const client = new WAConnection()
-	client.version = [2, 2143, 3]
+	client.version = [2, 2143 ,3]
         client.logger.level = 'warn'
 	console.log(banner.string)
 	client.on('qr', () => {
