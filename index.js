@@ -1458,23 +1458,31 @@ break
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
        if (budy.startsWith(`tamare`)) {
-        const none = fs.readFileSync('./mp3/fiesta.mp3');
+        const none = fs.readFileSync('./mp3/KRIS.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   } 
                      if (budy.startsWith(`carnada`)) {
-        const none = fs.readFileSync('./mp3/fiesta.mp3');
+        const none = fs.readFileSync('./mp3/Tamare.m4a');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
        if (budy.startsWith(`PEDIMOS`)) {
-        const none = fs.readFileSync('./mp3/fiesta.mp3');
+        const none = fs.readFileSync('./mp3/Tamare.m4a');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
        if (budy.startsWith(`tamare`)) {
-        const none = fs.readFileSync('./mp3/fiesta.mp3');
+        const none = fs.readFileSync('./mp3/Tamare.m4a');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   } 
 	if (budy.startsWith(`Fiesta del admin`)) {
         const none = fs.readFileSync('./mp3/admin.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  }
+        if (budy.startsWith(`BUBABOT`)) {
+        const none = fs.readFileSync('./mp3/Bubaclan.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  }
+	if (budy.startsWith(`bubaclan`)) {
+        const none = fs.readFileSync('./mp3/Bubaclan.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
 	if (budy.startsWith(`Viernes`)) {
